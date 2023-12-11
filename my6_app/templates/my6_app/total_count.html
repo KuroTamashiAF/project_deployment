@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Посчитали в базу данных</title>
+</head>
+<body>
+<p>{{ title }}</p>
+{% if total %}
+    <p>Число: {{ total }}</p>
+{% endif %}
+{% if products %}
+    <p>Число: {{ products.total_quantity }}</p>
+{% endif %}
+</body>
+</html>

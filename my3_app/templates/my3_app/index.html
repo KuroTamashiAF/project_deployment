@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+ПОдставляю в базовый шаблон блок из индекса
+{% endblock %}
+
+{% block content %}
+<ul>
+    {% for i in my_list %}
+    <li>{{ i }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
+

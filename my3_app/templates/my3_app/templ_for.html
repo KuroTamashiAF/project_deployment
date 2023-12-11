@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Цикл For в шаблонах Django</title>
+    <style>
+        body{
+            background-color: LightSeaGreen;
+        }
+    </style>
+</head>
+<body>
+<h1>Элементы списка </h1>
+<ol>
+    {% for item in my_list %}
+    <li>{{ item }}</li>
+    {% endfor %}
+</ol>
+<h2>Ключи и значения словаря </h2>
+
+<table>
+    {% for key, value in my_dict.items %}
+       <tr> <td>{{ count }}</td><td>{{ key }}</td><td>{{ value }}</td></tr>
+
+    {% endfor %}
+</table>
+</body>
+</html>
